@@ -9,6 +9,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
+        {...props}
+        disabled
         className={cn(
           `w-auto 
           rounded-full 
